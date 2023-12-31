@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-31T16:02:10 IST" name="Default suite" finished-at="2023-12-31T16:03:06 IST" duration-ms="55153">
+  <suite started-at="2023-12-31T17:57:01 IST" name="Default suite" finished-at="2023-12-31T17:57:22 IST" duration-ms="20925">
     <groups>
     </groups>
-    <test started-at="2023-12-31T16:02:10 IST" name="Default test" finished-at="2023-12-31T16:03:06 IST" duration-ms="55153">
-      <class name="Demo_TestNG">
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:Demo_TestNG@548d708a]" started-at="2023-12-31T16:02:10 IST" name="setUpTest" finished-at="2023-12-31T16:02:49 IST" duration-ms="38397" status="PASS">
+    <test started-at="2023-12-31T17:57:01 IST" name="Default test" finished-at="2023-12-31T17:57:22 IST" duration-ms="20925">
+      <class name="Demo_ExtentReports">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:Demo_ExtentReports@33065d67]" started-at="2023-12-31T17:56:50 IST" name="setUpTest" finished-at="2023-12-31T17:57:01 IST" duration-ms="11073" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="googleSearch()[pri:0, instance:Demo_TestNG@548d708a]" started-at="2023-12-31T16:02:49 IST" name="googleSearch" finished-at="2023-12-31T16:03:05 IST" duration-ms="15850" status="PASS">
+        <test-method signature="googleSearchTest()[pri:0, instance:Demo_ExtentReports@33065d67]" started-at="2023-12-31T17:57:01 IST" name="googleSearchTest" finished-at="2023-12-31T17:57:22 IST" duration-ms="20672" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- googleSearch -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:Demo_TestNG@548d708a]" started-at="2023-12-31T16:03:05 IST" name="tearDownTest" finished-at="2023-12-31T16:03:06 IST" duration-ms="572" status="PASS">
+        </test-method> <!-- googleSearchTest -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:Demo_ExtentReports@33065d67]" started-at="2023-12-31T17:57:22 IST" name="tearDownTest" finished-at="2023-12-31T17:57:24 IST" duration-ms="1910" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-      </class> <!-- Demo_TestNG -->
+      </class> <!-- Demo_ExtentReports -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
