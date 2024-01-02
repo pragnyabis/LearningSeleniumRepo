@@ -41,7 +41,7 @@ public class ExcelUtils {
 		return rowCount;
 	}
 	
-	public static int getColCount() {
+	public int getColCount() {
 		
 		int colCount = 0;
 		colCount = sheet.getRow(0).getPhysicalNumberOfCells();
@@ -50,13 +50,18 @@ public class ExcelUtils {
 		return colCount;
 	}
 	
-public static String getCellData(int rowNum, int colNum) {
-		
-		String cellData = null;
-		cellData = sheet.getRow(rowNum).getCell(colNum).getStringCellValue();
-		//System.out.println("Cell[" + rowNum + "][" + colNum + "] = " + cellData);
-		
-		return cellData;
-	}
+	public String getCellData(int rowNum, int colNum) {
+			
+			String cellData = null;
+			
+			String cellType = sheet.getRow(rowNum).getCell(colNum).getCellType().toString();
+			//System.out.println(cellType);
+			
+			cellData = sheet.getRow(rowNum).getCell(colNum).getStringCellValue();
+			//System.out.println("Cell[" + rowNum + "][" + colNum + "] = " + cellData);
+			
+			return cellData;
+		}
+	
 
 }

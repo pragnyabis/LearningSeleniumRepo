@@ -12,14 +12,17 @@ public class ExcelDataProvider {
 		
 		ExcelUtils excel = new ExcelUtils(excelPath, sheetName);
 		
-		int rowCount = excel.getRowCount();
+		int rowCount = ExcelUtils.getRowCount();
 		int colCount = excel.getColCount();
 		
-		for(int i = 0; i < rowCount; i++) {
-			for(int j = 0; i < colCount-1; j++) {
+		//System.out.println(rowCount);
+		//System.out.println(colCount);
+		
+		for(int i = 1; i < rowCount; ++i) {
+			for(int j = 0; i < colCount; ++j) {
 				
 				String cellData = excel.getCellData(i, j);
-				System.out.print(cellData + "| ");
+				System.out.println(cellData + "| ");
 			}
 			System.out.println();
 		}
