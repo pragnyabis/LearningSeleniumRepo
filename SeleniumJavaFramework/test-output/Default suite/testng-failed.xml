@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="orangeHrmDemoWebsite.orangeLoginTest">
+      <class name="SauceLab_SwagLabs.swagLabTest">
         <methods>
+          <include name="swagLabAddItems"/>
           <include name="tearDownTest"/>
           <include name="setUpTest"/>
-          <include name="orangeDasboard"/>
         </methods>
-      </class> <!-- orangeHrmDemoWebsite.orangeLoginTest -->
+      </class> <!-- SauceLab_SwagLabs.swagLabTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

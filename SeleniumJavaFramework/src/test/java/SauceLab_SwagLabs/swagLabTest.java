@@ -24,7 +24,7 @@ public class swagLabTest {
 	@Test
 	public void swagLabLogin() {
 		swagLabLoginPageObjects loginObj = new swagLabLoginPageObjects(driver);
-		loginObj.waitTiming(5000);
+		loginObj.waitTiming(2000);
 		loginObj.clickUsernameTextbox();
 		loginObj.setTextInUsernameTextbox("standard_user");
 		loginObj.clickPasswordTextbox();
@@ -35,8 +35,11 @@ public class swagLabTest {
 	@Test
 	public void swagLabAddItems() {
 		swagLabStandardUserPageObjects addItemsObj = new swagLabStandardUserPageObjects(driver);
-		addItemsObj.waitTiming(5000);
-		addItemsObj.clickAllAddToCartButtons();
+		addItemsObj.clickProduct("Bike");
+		addItemsObj.waitTiming(2000);
+		//addItemsObj.clickAllAddToCartButtons();
+		//addItemsObj.waitTiming(10000);
+		//addItemsObj.waitTiming(2000);
 	}
 		
 	@AfterTest

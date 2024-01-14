@@ -25,7 +25,15 @@ public class swagLabStandardUserPageObjects {
 		
 		for (WebElement btn : buttons) {
             btn.click();
+            waitTiming(2000);
         }
+	}
+	
+	public void clickProduct(String productName) {
+		String pname = "//a[contains(.,'"+ productName +"')]";
+		System.out.println(pname);
+		By product = By.xpath(pname);
+		driver.findElement(product).click();
 	}
 	
 	
