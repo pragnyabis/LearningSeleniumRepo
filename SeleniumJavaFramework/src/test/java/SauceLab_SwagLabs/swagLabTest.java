@@ -37,11 +37,40 @@ public class swagLabTest {
 		swagLabStandardUserPageObjects addItemsObj = new swagLabStandardUserPageObjects(driver);
 		addItemsObj.clickProduct("Bike");
 		addItemsObj.waitTiming(2000);
-		//addItemsObj.clickAllAddToCartButtons();
-		//addItemsObj.waitTiming(10000);
-		//addItemsObj.waitTiming(2000);
+		addItemsObj.clickAllAddToCartButtons();
+		addItemsObj.waitTiming(10000);
 	}
+	
+	@Test
+	public void swagLabSearchProductByPriceTest() {
 		
+	}
+	
+	@Test
+	public void swagLabSearchProductByNameTest() {
+		
+	}
+	
+	@Test
+	public void swagLabOpenProductDetailsPageTest() {
+		
+	}
+	
+	@Test
+	public void swagLabSortProductsTest() {
+		
+	}
+	
+	@Test
+	public void swagLabCartCheckoutTest() {
+		
+	}
+	
+	@Test
+	public void swagLabLogoutTest() {
+		
+	}
+	
 	@AfterTest
 	public void tearDownTest() {
 		driver.close();
