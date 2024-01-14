@@ -3,3 +3,8 @@
 [ERROR] 2023-12-31 20:09:15.068 [main] Log4jDemo - This is error message
 [WARN ] 2023-12-31 20:09:15.070 [main] Log4jDemo - This is warning message
 [FATAL] 2023-12-31 20:09:15.072 [main] Log4jDemo - This is fatal message
+[TRACE] 2024-01-14 17:04:28.978 [main] Log4jDemo - This is trace message
+[INFO ] 2024-01-14 17:04:28.990 [main] Log4jDemo - This is info message
+[ERROR] 2024-01-14 17:04:28.993 [main] Log4jDemo - This is error message
+[WARN ] 2024-01-14 17:04:28.996 [main] Log4jDemo - This is warning message
+[FATAL] 2024-01-14 17:04:28.998 [main] Log4jDemo - This is fatal message

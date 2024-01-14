@@ -1,5 +1,4 @@
-package orangeHrmDemoWebsite;
-
+package SauceLab_SwagLabs;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,41 +7,41 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class orangeLoginTest {
+public class swagLabTest {
 	
 	WebDriver driver = null;
 	
 	@BeforeTest
+	
 	public void setUpTest() {
 		
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-		//driver.get("file:///C:/Users/DELL/Desktop/OrangeHRM.html");
+		driver.get("https://www.saucedemo.com/");
 		driver.manage().window().maximize();
 	}
 	
 	@Test
-	public void orangeLogin() {
-		orangeLoginPageObjects loginObj = new orangeLoginPageObjects(driver);
-		loginObj.waitTillTitleIsVisible();
+	public void swagLabLogin() {
+		swagLabLoginPageObjects loginObj = new swagLabLoginPageObjects(driver);
+		loginObj.waitTiming(5000);
 		loginObj.clickUsernameTextbox();
-		loginObj.setTextInUsernameTextbox("Admin");
+		loginObj.setTextInUsernameTextbox("standard_user");
 		loginObj.clickPasswordTextbox();
-		loginObj.setTextInPasswordTextbox("admin123");
+		loginObj.setTextInPasswordTextbox("secret_sauce");
 		loginObj.clickLoginButton();
 	}
 	
 	@Test
-	public void orangeDasboard() {
-		orangeDasboardPageObjects dashboardObj = new orangeDasboardPageObjects(driver);
-		dashboardObj.clickAdminMenu();
-		}
-	
+	public void swagLabAddItems() {
+		swagLabStandardUserPageObjects addItemsObj = new swagLabStandardUserPageObjects(driver);
+		addItemsObj.waitTiming(5000);
+		addItemsObj.clickAllAddToCartButtons();
+	}
+		
 	@AfterTest
 	public void tearDownTest() {
 		driver.close();
 		//driver.quit();
 	}
-
 }
