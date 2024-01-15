@@ -11,7 +11,9 @@ public class swagLabStandardUserPageObjects {
 
 	WebDriver driver = null;
 	By title_header = By.xpath("//div[@class='Products']");
+	By product_item = By.className("inventory_item_name");
 	By addToCart_button = By.xpath("//*[text()='Click Me']");
+	By checkout_button = By.partialLinkText("/cart.html");
 	
 	public swagLabStandardUserPageObjects(WebDriver driver) {
 		this.driver = driver;
@@ -30,6 +32,12 @@ public class swagLabStandardUserPageObjects {
         }
 	}
 	
+	public void clickFirstProduct() {
+		WebElement ele = driver.findElement(product_item);
+		System.out.println(ele.getText());
+		ele.click();
+	}
+	
 	public void clickProduct(String productName) {
 		String pname = "//img[contains(@src,'"+ productName +"')]";
 		System.out.println(pname);
@@ -45,6 +53,11 @@ public class swagLabStandardUserPageObjects {
 		ele.click();
 	}
 	
+	public void clickCheckout() {
+		WebElement ele = driver.findElement(checkout_button);
+		System.out.println(ele.getLocation().toString());
+		ele.click();
+	}
 	
 	public void waitTiming(int t) {
 		try {
