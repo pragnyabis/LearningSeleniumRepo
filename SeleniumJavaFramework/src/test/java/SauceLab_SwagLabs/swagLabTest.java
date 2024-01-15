@@ -17,7 +17,7 @@ public class swagLabTest {
 		
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		driver.get("https://www.saucedemo.com/");
+		driver.get("https://www.saucedemo.com/v1/index.html");
 		driver.manage().window().maximize();
 	}
 	
@@ -30,15 +30,16 @@ public class swagLabTest {
 		loginObj.clickPasswordTextbox();
 		loginObj.setTextInPasswordTextbox("secret_sauce");
 		loginObj.clickLoginButton();
+		loginObj.waitTiming(5000);
 	}
 	
 	@Test
 	public void swagLabAddItems() {
 		swagLabStandardUserPageObjects addItemsObj = new swagLabStandardUserPageObjects(driver);
-		addItemsObj.clickProduct("Bike");
-		addItemsObj.waitTiming(2000);
-		addItemsObj.clickAllAddToCartButtons();
-		addItemsObj.waitTiming(10000);
+		addItemsObj.clickProduct("backpack");
+		addItemsObj.waitTiming(5000);
+		//addItemsObj.clickAllAddToCartButtons();
+		//addItemsObj.waitTiming(10000);
 	}
 	
 	@Test

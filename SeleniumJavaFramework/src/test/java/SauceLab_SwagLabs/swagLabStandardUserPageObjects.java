@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 public class swagLabStandardUserPageObjects {
 
@@ -30,10 +31,18 @@ public class swagLabStandardUserPageObjects {
 	}
 	
 	public void clickProduct(String productName) {
-		String pname = "//a[contains(.,'"+ productName +"')]";
+		String pname = "//img[contains(@src,'"+ productName +"')]";
 		System.out.println(pname);
 		By product = By.xpath(pname);
-		driver.findElement(product).click();
+		WebElement ele = driver.findElement(product);
+		waitTiming(2000);
+		System.out.println(ele.isDisplayed());
+		System.out.println(ele.getLocation());
+		//ele.submit();
+		Actions action = new Actions(driver);
+		action.moveToElement(ele);
+		
+		ele.click();
 	}
 	
 	
