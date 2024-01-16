@@ -6,7 +6,6 @@
 	<artifactId>SeleniumJavaFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Mavenjava</name>
-	<url>https://maven.apache.org</url>
 
 	<profiles>
 		<profile>

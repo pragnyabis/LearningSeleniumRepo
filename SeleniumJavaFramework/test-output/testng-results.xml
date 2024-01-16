@@ -1,17 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+<testng-results ignored="0" total="15" passed="13" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-16T01:33:06 IST" name="Default suite" finished-at="2024-01-16T01:33:34 IST" duration-ms="27654">
+  <suite started-at="2024-01-16T21:28:58 IST" name="Suite1" finished-at="2024-01-16T21:33:07 IST" duration-ms="248794">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberPkg.googleSearchCucumberTestRunner@4bdeaabb]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-01-16T01:33:06 IST" name="Default test" finished-at="2024-01-16T01:33:34 IST" duration-ms="27654">
-      <class name="SauceLab_SwagLabs.swagLabTest">
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@7ce026d3]" started-at="2024-01-16T01:33:06 IST" name="setUpTest" finished-at="2024-01-16T01:33:16 IST" duration-ms="9707" status="PASS">
+    <test started-at="2024-01-16T21:28:58 IST" name="Test1" finished-at="2024-01-16T21:33:07 IST" duration-ms="248794">
+      <class name="tests.Demo_TestNG">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:tests.Demo_TestNG@17bffc17]" started-at="2024-01-16T21:30:09 IST" name="setUpTest" finished-at="2024-01-16T21:30:17 IST" duration-ms="8537" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="swagLabAddItems()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@7ce026d3]" started-at="2024-01-16T01:33:16 IST" name="swagLabAddItems" finished-at="2024-01-16T01:33:16 IST" duration-ms="175" status="FAIL">
+        <test-method signature="googleSearch()[pri:0, instance:tests.Demo_TestNG@17bffc17]" started-at="2024-01-16T21:32:38 IST" name="googleSearch" finished-at="2024-01-16T21:33:03 IST" duration-ms="25688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleSearch -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:tests.Demo_TestNG@17bffc17]" started-at="2024-01-16T21:33:06 IST" name="tearDownTest" finished-at="2024-01-16T21:33:07 IST" duration-ms="583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- tests.Demo_TestNG -->
+      <class name="orangeHrmDemoWebsite.orangeLoginTest">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:orangeHrmDemoWebsite.orangeLoginTest@239a307b]" started-at="2024-01-16T21:29:22 IST" name="setUpTest" finished-at="2024-01-16T21:29:57 IST" duration-ms="35047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="orangeDasboard()[pri:0, instance:orangeHrmDemoWebsite.orangeLoginTest@239a307b]" started-at="2024-01-16T21:31:30 IST" name="orangeDasboard" finished-at="2024-01-16T21:31:36 IST" duration-ms="5322" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@href,'admin')]"}
+  (Session info: chrome=120.0.6099.217)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e0a2b288523213eb089ef80166e37c18, findElement {using=xpath, value=//*[contains(@href,'admin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.217, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\PRAGNY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64593}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64593/devtoo..., se:cdpVersion: 120.0.6099.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e0a2b288523213eb089ef80166e37c18]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@href,'admin')]"}
+  (Session info: chrome=120.0.6099.217)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e0a2b288523213eb089ef80166e37c18, findElement {using=xpath, value=//*[contains(@href,'admin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.217, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\PRAGNY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64593}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64593/devtoo..., se:cdpVersion: 120.0.6099.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e0a2b288523213eb089ef80166e37c18
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at orangeHrmDemoWebsite.orangeDasboardPageObjects.clickAdminMenu(orangeDasboardPageObjects.java:22)
+at orangeHrmDemoWebsite.orangeLoginTest.orangeDasboard(orangeLoginTest.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orangeDasboard -->
+        <test-method signature="orangeLogin()[pri:0, instance:orangeHrmDemoWebsite.orangeLoginTest@239a307b]" started-at="2024-01-16T21:31:36 IST" name="orangeLogin" finished-at="2024-01-16T21:31:48 IST" duration-ms="12337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orangeLogin -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:orangeHrmDemoWebsite.orangeLoginTest@239a307b]" started-at="2024-01-16T21:33:04 IST" name="tearDownTest" finished-at="2024-01-16T21:33:05 IST" duration-ms="739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- orangeHrmDemoWebsite.orangeLoginTest -->
+      <class name="cucumberPkg.googleSearchCucumberTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumberPkg.googleSearchCucumberTestRunner@4bdeaabb]" started-at="2024-01-16T21:30:18 IST" name="setUpClass" finished-at="2024-01-16T21:30:19 IST" duration-ms="1745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3fcee3d9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberPkg.googleSearchCucumberTestRunner@4bdeaabb]" started-at="2024-01-16T21:30:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-16T21:31:30 IST" duration-ms="70383" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test Google Search Bar"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Google Search Engine is working"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberPkg.googleSearchCucumberTestRunner@4bdeaabb]" started-at="2024-01-16T21:31:30 IST" name="tearDownClass" finished-at="2024-01-16T21:31:30 IST" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumberPkg.googleSearchCucumberTestRunner -->
+      <class name="tests.Demo_ExtentReports">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Demo_ExtentReports@3cce5371]" started-at="2024-01-16T21:28:52 IST" name="setUp" finished-at="2024-01-16T21:28:58 IST" duration-ms="5482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:tests.Demo_ExtentReports@3cce5371]" started-at="2024-01-16T21:29:57 IST" name="setUpTest" finished-at="2024-01-16T21:30:09 IST" duration-ms="11770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="googleSearchTest1()[pri:0, instance:tests.Demo_ExtentReports@3cce5371]" started-at="2024-01-16T21:32:05 IST" name="googleSearchTest1" finished-at="2024-01-16T21:32:29 IST" duration-ms="23394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleSearchTest1 -->
+        <test-method signature="googleSearchTest2()[pri:0, instance:tests.Demo_ExtentReports@3cce5371]" started-at="2024-01-16T21:32:29 IST" name="googleSearchTest2" finished-at="2024-01-16T21:32:34 IST" duration-ms="5432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleSearchTest2 -->
+        <test-method signature="googleSearchTest3()[pri:0, instance:tests.Demo_ExtentReports@3cce5371]" started-at="2024-01-16T21:32:34 IST" name="googleSearchTest3" finished-at="2024-01-16T21:32:38 IST" duration-ms="3434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleSearchTest3 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:tests.Demo_ExtentReports@3cce5371]" started-at="2024-01-16T21:33:05 IST" name="tearDownTest" finished-at="2024-01-16T21:33:06 IST" duration-ms="968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Demo_ExtentReports@3cce5371]" started-at="2024-01-16T21:33:07 IST" name="tearDown" finished-at="2024-01-16T21:33:09 IST" duration-ms="2150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Demo_ExtentReports -->
+      <class name="SauceLab_SwagLabs.swagLabTest">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@2a8448fa]" started-at="2024-01-16T21:28:58 IST" name="setUpTest" finished-at="2024-01-16T21:29:22 IST" duration-ms="24098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="swagLabAddItems()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@2a8448fa]" started-at="2024-01-16T21:31:48 IST" name="swagLabAddItems" finished-at="2024-01-16T21:31:48 IST" duration-ms="174" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"partial link text","selector":"/cart.html"}
@@ -20,9 +179,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [32fa68bbe94c1df025cc018a533e6b2b, findElement {using=partial link text, value=/cart.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.217, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\PRAGNY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54795}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54795/devtoo..., se:cdpVersion: 120.0.6099.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32fa68bbe94c1df025cc018a533e6b2b]]>
+Command: [3a878c7568b985465835a4a2b08e7cb7, findElement {using=partial link text, value=/cart.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.217, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\PRAGNY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64574}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64574/devtoo..., se:cdpVersion: 120.0.6099.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a878c7568b985465835a4a2b08e7cb7]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"partial link text","selector":"/cart.html"}
@@ -31,9 +190,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [32fa68bbe94c1df025cc018a533e6b2b, findElement {using=partial link text, value=/cart.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.217, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\PRAGNY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54795}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54795/devtoo..., se:cdpVersion: 120.0.6099.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32fa68bbe94c1df025cc018a533e6b2b
+Command: [3a878c7568b985465835a4a2b08e7cb7, findElement {using=partial link text, value=/cart.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.217, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\PRAGNY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64574}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64574/devtoo..., se:cdpVersion: 120.0.6099.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a878c7568b985465835a4a2b08e7cb7
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -64,61 +223,51 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- swagLabAddItems -->
-        <test-method signature="swagLabCartCheckoutTest()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@7ce026d3]" started-at="2024-01-16T01:33:16 IST" name="swagLabCartCheckoutTest" finished-at="2024-01-16T01:33:16 IST" duration-ms="7" status="PASS">
+        <test-method signature="swagLabCartCheckoutTest()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@2a8448fa]" started-at="2024-01-16T21:31:48 IST" name="swagLabCartCheckoutTest" finished-at="2024-01-16T21:31:48 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- swagLabCartCheckoutTest -->
-        <test-method signature="swagLabLogin()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@7ce026d3]" started-at="2024-01-16T01:33:16 IST" name="swagLabLogin" finished-at="2024-01-16T01:33:33 IST" duration-ms="16682" status="PASS">
+        <test-method signature="swagLabLogin()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@2a8448fa]" started-at="2024-01-16T21:31:48 IST" name="swagLabLogin" finished-at="2024-01-16T21:32:05 IST" duration-ms="16905" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- swagLabLogin -->
-        <test-method signature="swagLabLogoutTest()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@7ce026d3]" started-at="2024-01-16T01:33:33 IST" name="swagLabLogoutTest" finished-at="2024-01-16T01:33:33 IST" duration-ms="5" status="PASS">
+        <test-method signature="swagLabLogoutTest()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@2a8448fa]" started-at="2024-01-16T21:32:05 IST" name="swagLabLogoutTest" finished-at="2024-01-16T21:32:05 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- swagLabLogoutTest -->
-        <test-method signature="swagLabOpenProductDetailsPageTest()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@7ce026d3]" started-at="2024-01-16T01:33:33 IST" name="swagLabOpenProductDetailsPageTest" finished-at="2024-01-16T01:33:33 IST" duration-ms="10" status="PASS">
+        <test-method signature="swagLabOpenProductDetailsPageTest()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@2a8448fa]" started-at="2024-01-16T21:32:05 IST" name="swagLabOpenProductDetailsPageTest" finished-at="2024-01-16T21:32:05 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- swagLabOpenProductDetailsPageTest -->
-        <test-method signature="swagLabSearchProductByNameTest()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@7ce026d3]" started-at="2024-01-16T01:33:33 IST" name="swagLabSearchProductByNameTest" finished-at="2024-01-16T01:33:33 IST" duration-ms="14" status="PASS">
+        <test-method signature="swagLabSearchProductByNameTest()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@2a8448fa]" started-at="2024-01-16T21:32:05 IST" name="swagLabSearchProductByNameTest" finished-at="2024-01-16T21:32:05 IST" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- swagLabSearchProductByNameTest -->
-        <test-method signature="swagLabSearchProductByPriceTest()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@7ce026d3]" started-at="2024-01-16T01:33:33 IST" name="swagLabSearchProductByPriceTest" finished-at="2024-01-16T01:33:33 IST" duration-ms="18" status="PASS">
+        <test-method signature="swagLabSearchProductByPriceTest()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@2a8448fa]" started-at="2024-01-16T21:32:05 IST" name="swagLabSearchProductByPriceTest" finished-at="2024-01-16T21:32:05 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- swagLabSearchProductByPriceTest -->
-        <test-method signature="swagLabSortProductsTest()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@7ce026d3]" started-at="2024-01-16T01:33:33 IST" name="swagLabSortProductsTest" finished-at="2024-01-16T01:33:33 IST" duration-ms="6" status="PASS">
+        <test-method signature="swagLabSortProductsTest()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@2a8448fa]" started-at="2024-01-16T21:32:05 IST" name="swagLabSortProductsTest" finished-at="2024-01-16T21:32:05 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- swagLabSortProductsTest -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@7ce026d3]" started-at="2024-01-16T01:33:33 IST" name="tearDownTest" finished-at="2024-01-16T01:33:34 IST" duration-ms="734" status="PASS">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:SauceLab_SwagLabs.swagLabTest@2a8448fa]" started-at="2024-01-16T21:33:03 IST" name="tearDownTest" finished-at="2024-01-16T21:33:04 IST" duration-ms="1009" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
       </class> <!-- SauceLab_SwagLabs.swagLabTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite1 -->
 </testng-results>

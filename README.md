@@ -25,6 +25,9 @@ and many more upcoming.
 
 # Start Jenkins on a Port
 
-1. Install latest **jenkins.war** file.
-2. Go to folder where the jenkins.war of Project lies, and Open cmd from there.
-3. Type **java -jar jenkins.war -httpPort=<Port number>** and hit ENTER.
+1. Download and Install latest Jenkins file for Windows.
+2. Open a browser and goto https://localhost/<portnumber> as used in step 1 installation; OR 
+3. Download **jenkins.war** file.
+4. Go to folder where the jenkins.war of Project lies, and Open cmd from there.
+5. Type **java -jar jenkins.war -httpPort=<Port number>** and hit ENTER.
+6. Open a browser and goto https://localhost/<portnumber> as used in step 5.
