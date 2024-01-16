@@ -6,6 +6,13 @@
 	<artifactId>SeleniumJavaFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Mavenjava</name>
+	
+	<properties>
+		<maven.compiler.source>8</maven.compiler.source>
+		<maven.compiler.target>8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<suiteXmlFile>testng.xml</suiteXmlFile>
+	</properties>
 
 	<profiles>
 		<profile>
@@ -17,18 +24,33 @@
 							<groupId>org.apache.maven.plugins</groupId>
 							<artifactId>maven-surefire-plugin</artifactId>
 							<version>3.2.5</version>
-							
 							<configuration>
-								<suiteXmlFiles>
-									<suiteXmlFile>testng.xml</suiteXmlFile>
-								</suiteXmlFiles>
+								<suiteXmlFiles>${suiteXmlFile}</suiteXmlFiles>
 							</configuration>
-							
 						</plugin>
 					</plugins>
 				</pluginManagement>
 			</build>
 		</profile>
+		
+		<profile>
+			<id>googleSearch</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.2.5</version>
+							<configuration>
+								<suiteXmlFiles>testng.xml</suiteXmlFiles>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+		
 	</profiles>
 
 
